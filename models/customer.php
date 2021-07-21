@@ -21,7 +21,7 @@ class Customer{
     private function sendOTP($phone, $otp){
         $curl = curl_init();
         curl_setopt_array($curl, array(
-        CURLOPT_URL => "https://www.fast2sms.com/dev/bulkV2?authorization=FlzKeyv97QXsGHpODeIk1ymvCZrm7RVr5Ajp62iXxmBgitbgLg26srEt7ubA&sender_id=TXTIND&message=".urlencode('OTP:'.$otp)."&route=v3&numbers=".urlencode($phone),
+        CURLOPT_URL => "https://www.fast2sms.com/dev/bulkV2?authorization=authToken&sender_id=TXTIND&message=".urlencode('OTP:'.$otp)."&route=v3&numbers=".urlencode($phone),
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_ENCODING => "",
         CURLOPT_MAXREDIRS => 10,

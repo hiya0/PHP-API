@@ -1,9 +1,9 @@
 <?php
 class Database{
-    private $serverName = "HSURFACE";
-    private $username ="Hiya";
-    private $password ="Hiya123$";
-    private $database ="Client";
+    private $serverName = "serverName";
+    private $username ="username";
+    private $password ="password";
+    private $database ="DBname";
     public $conn;
   
     // get the database connection
